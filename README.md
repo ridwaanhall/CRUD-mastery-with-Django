@@ -6,7 +6,6 @@
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Running the Development Server](#running-the-development-server)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -33,7 +32,7 @@
 
 2. Enter the project directory:
    ```bash
-   cd CRUD-mastery-with-Django
+   cd CRUD-mastery-with-Django/crm
 
 3. Make venv:
    ```bash
@@ -52,8 +51,20 @@
    ```bash
    python manage.py migrate
 
-3. Start the development server:
+3. Make superuser:
+   ```bash
+   python manage.py createsuperuser
+
+4. Start the development server:
    ```bash
    python manage.py runserver
 
-## Usage
+5. Open http://127.0.0.1:8000 in your browser.
+
+6. Click on the link to create your own account.
+
+7. Happy coding!
+
+## Contributing
+
+## License
