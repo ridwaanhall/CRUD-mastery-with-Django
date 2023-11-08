@@ -2,11 +2,12 @@
 
 {% block content %}
 
-    <div class="card">
-        <strong>
+    <div class="card mb-4">
+        <strong class="mt-2 mb-2">
             {{ record.last_name|upper }}
             {{ record.first_name }}
         </strong>
+
         <div class="card-body">
             <p><strong>ID:</strong>{{ record.id }}</p>
             <p><strong>Email:</strong>{{ record.email }}</p>
@@ -19,4 +20,7 @@
         </div>
 
     </div>
+    <a href="{% url 'dashboard' %}" class="btn btn-secondary">Return</a>
+    <a href="{% url 'update-record' record.id %}" class="btn btn-info">Update record</a>
+    <a href="{% url '' %}" class="btn btn-danger">Detele record</a>
 {% endblock %}
