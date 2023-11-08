@@ -22,5 +22,5 @@
     </div>
     <a href="{% url 'dashboard' %}" class="btn btn-secondary">Return</a>
     <a href="{% url 'update-record' record.id %}" class="btn btn-info">Update record</a>
-    <a href="{% url '' %}" class="btn btn-danger">Detele record</a>
+    <a href="{% url 'delete-record' record.id %}" class="btn btn-danger">Detele record</a>
 {% endblock %}
