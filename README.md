@@ -29,31 +29,31 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ridwaanhall/CRUD-mastery-with-Django.git```
+   git clone https://github.com/ridwaanhall/CRUD-mastery-with-Django.git
 
 2. Enter the project directory:
    ```bash
-   cd CRUD-mastery-with-Django```
+   cd CRUD-mastery-with-Django
 
 3. Make venv:
    ```bash
-   virtualenv venv```
+   virtualenv venv
 
 4. Install dependencies:
    ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
 
 ### Running the Development Server
 1. Make migrations:
    ```bash
-   python manage.py makemigrations```
+   python manage.py makemigrations
 
 2. Migrate:
    ```bash
-   python manage.py migrate```
+   python manage.py migrate
 
 3. Start the development server:
    ```bash
-   python manage.py runserver```
+   python manage.py runserver
 
 ## Usage
