@@ -1,5 +1,5 @@
 # CRUD WITH DJANGO
-
+![Sample](index.png)
 ## Table of Contents
 - [Features](#features)
 - [Requirements](#requirements)
