@@ -71,3 +71,25 @@ def create_record(request):
             return redirect('dashboard')
     context = {'form': form}
     return render(request, 'webapp/create-record.html', context=context)
+
+# update a record
+@login_required(login_url='my-login')
+def update_record(request, pk):
+    record = Record.objects.get(id=pk)
+    #record = get_object_or_404(Record, id=pk)
+    form = UpdateRecordForm(instance=record) # instance use for pre-populate form
+    
+    if request.method == 'POST':
+        form = UpdateRecordForm(request.POST, instance=record)
+        if form.is_valid():
+            form.save()
+            return redirect('dashboard')
+    
+    context = {'form': form}
+    return render(request, 'webapp/update-record.html', context=context)
+
+# read/view a sungular record
+def singular_record(request, pk):
+    all_record = Record.objects.get(id=pk)
+    context = {'record': all_record}
+    return render(request, 'webapp/view-record.html', context=context)
